@@ -1,1 +1,11 @@
-<p>attraction works!</p>
+<div class="attraction">
+  <div class="attraction__images" >
+    <div class="attraction__images__item" *ngFor="let a of attractions" (click)="active(a)">
+      <img src="{{a.Img}}">
+    </div>
+  </div>
+  <div class="attraction__text">
+    <span class="attraction__text__title"> {{attraction.Title}} </span>
+    <span class="attraction__text__body"> {{attraction.Text}} </span>
+  </div>
+</div>
