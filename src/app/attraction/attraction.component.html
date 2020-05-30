@@ -1,7 +1,6 @@
 <div class="attraction">
   <div class="attraction__images" >
     <div class="attraction__images__item" [style.background-image]="'url('+ a.Img + ')'"  *ngFor="let a of attractions" (click)="active(a)">
-      <!-- <img src="{{a.Img}}"> -->
       <span> {{a.Title}}</span>
     </div>
   </div>
