@@ -18,14 +18,21 @@
       margin: 0;
       background-size: 100% 100%;
       cursor: pointer;
+
       span{
         visibility: hidden;
       }
       &:hover{
         backdrop-filter: blur(10px);
         transition: visibility 2s;
+        font-size: 1rem;
         span{
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 50%;
           visibility: visible;
+          text-align: center;
         }
       }
     }
