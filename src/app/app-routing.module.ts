@@ -1,7 +1,7 @@
+import { HomeComponent } from './home/home.component';
 import { MapComponent } from './map/map.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CenterComponent } from './center/center.component';
 import { HistoryComponent } from './history/history.component';
 import { AttractionComponent } from './attraction/attraction.component';
 
@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: CenterComponent,
+    component: HomeComponent,
   },
   {
     path: 'history',
